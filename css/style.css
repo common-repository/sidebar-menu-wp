@@ -1,0 +1,123 @@
+/* Hide submenus by default */
+.wp-sidebar-menu .submenu {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Show submenus when their parent item has 'open' class */
+.wp-sidebar-menu .parent-item.open > .submenu {
+    display: block;
+}
+
+/* Arrow indicators */
+.wp-sidebar-menu .parent-item.has-submenu > a::after {
+    content: '>';
+    margin-left: 5px;
+}
+
+
+
+.wp-sidebar-menu ul .parent-item > a {
+    padding-left: 28px;
+}
+
+.wp-sidebar-menu ul .parent-item.has-submenu > a:after {
+    font-size: 18px;
+}
+
+.wp-sidebar-menu ul .submenu {
+  
+}
+
+
+.wp-sidebar-menu ul .submenu a:hover {
+    background: none;
+}
+
+/** Fix minor CSS bugs if have with this file **/
+.wp-sidebar-menu .parent-item.open > a{
+    position: relative;
+}
+
+
+.wp-sidebar-menu .parent-item.open > a:after {
+    transition: 0.3s ease;
+}
+
+
+
+.wp-sidebar-menu .parent-item.open > a::after {
+    content: '<';
+}
+
+/* Basic styling for menu */
+.wp-sidebar-menu ul {
+    margin: 0;
+    padding: 0;
+}
+
+.wp-sidebar-menu li {
+    list-style: none;
+}
+
+/* Anchor tags with background and padding */
+.wp-sidebar-menu a {
+    text-decoration: none !important;
+    color: #000;
+    display: block;
+    padding: 10px;
+    background-color: #f4f4f4;
+}
+
+
+.wp-sidebar-menu a:focus {
+    outline:none;
+}
+
+/* Hover state */
+.wp-sidebar-menu a:hover {
+    background-color: #ddd;
+}
+
+/* Indentation for submenu items */
+.wp-sidebar-menu .submenu li a {
+    padding-left: 30px;
+}
+
+.wp-sidebar-menu .submenu a{
+    color:#000;
+}
+
+
+/* Avoid Spaces between menu items */
+.wp-sidebar-menu li {
+    margin-bottom: 0!important;
+}
+
+
+/* Additional levels of submenus */
+.wp-sidebar-menu .submenu.level-1 li a {
+    padding-left: 45px; /* Adjust this value for further sub-levels */
+}
+
+
+.wp-sidebar-menu .submenu.level-2 li a {
+    padding-left: 60px; /* Adjust this value for further sub-levels */
+}
+
+.wp-sidebar-menu .submenu.level-3 li a {
+    padding-left: 75px; /* Adjust this value for further sub-levels */
+}
+
+.wp-sidebar-menu .submenu.level-4 li a {
+    padding-left: 90px; /* Adjust this value for further sub-levels */
+}
+
+.wp-sidebar-menu .submenu.level-5 li a {
+    padding-left: 105px; /* Adjust this value for further sub-levels */
+}
+
+
+/* Continue this pattern for deeper levels if needed */

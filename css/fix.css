@@ -1,0 +1,30 @@
+
+/** Fix minor CSS bugs if have using this file **/
+
+
+/** New Arrows Styling **/
+
+.wp-sidebar-menu ul .parent-item.has-submenu > a:before, .wp-sidebar-menu ul .parent-item.has-submenu > a:after {
+    background: currentColor;
+    content: '';
+    width: 15px;
+    height: 2px;
+    position: absolute;
+    /* left: calc(50% - 150px); */
+    right: 25px;
+    top: 23px;
+    transform-origin: 50% 50%;
+    transition: all .3s ease;
+}
+
+.wp-sidebar-menu ul .parent-item.has-submenu > a:after {
+    transform: rotate(90deg);
+    margin-left: 0;
+}
+
+.wp-sidebar-menu ul .parent-item > a {position: relative;}
+
+.wp-sidebar-menu .parent-item.open > a:after {
+    opacity: 0;
+    transform: scaleX(0);
+}
